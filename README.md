@@ -1,18 +1,26 @@
 # Tortillery-M1Pro
 
 **Custom firmware for the Artillery M1 Pro**  
-**Beta — Work in Progress**
+**Stable Beta — Under Active Development**
 
-![Status: Beta](assets/badges/status-beta.svg) ![Development: In Progress](assets/badges/development-in-progress.svg) ![OS: Debian 13](assets/badges/os-debian-13.svg) ![Klipper: v13](assets/badges/klipper-v13.svg)
+![Status: Stable Beta](assets/badges/status-stable-beta.svg) ![Development: In Progress](assets/badges/development-in-progress.svg) ![OS: Debian 13](assets/badges/os-debian-13.svg) ![Klipper: v13](assets/badges/klipper-v13.svg)
 
 > [!IMPORTANT]
-> **This project is under active development.** Tortillery-M1Pro is currently functional, but its macros and configuration settings still require review, testing, and fine-tuning. It is **not a stable or final release**.
+> **Stable beta, still under development.** After several successful test prints, no issues have been observed so far. The firmware is working reliably in the tested setup, but further testing and improvements may continue. **This is not a final release.**
 
 ## Overview
 
-**Tortillery-M1Pro** is a custom firmware project for the **Artillery M1 Pro** 3D printer, based on **Debian GNU/Linux 13 (Trixie)** and **Klipper v13**.
+**Tortillery-M1Pro** is an independent custom firmware project for the **Artillery M1 Pro** 3D printer, running **Debian GNU/Linux 13 (Trixie)** and **Klipper v13**.
 
-The current beta has working support for the **CS1237 probe** and **cutter sensor**. Scripts for flashing the **Host, Main, and THR MCUs** are also available. The **AI camera is not currently active**.
+The **CS1237 probe** and **cutter sensor** are working. Tools and scripts are available for flashing the **Host, Main, and THR MCUs**. The **AI camera remains disabled** for now.
+
+## Latest Update
+
+- ✅ **Stable beta in testing:** several prints completed successfully, with no issues observed so far.
+- ✅ **Updated firmware image:** a new image is available in the Google Drive download folder.
+- ✅ **Improved macros and configuration:** the updated image includes revised macros and tuning adjustments.
+- ✅ **Complete flashing resources:** RKDevTool, scripts and files for the **THR, Main, and Host MCUs**, and **Windows 10 drivers** are included in the download folder.
+- ⏸️ **AI camera:** remains disabled in this version.
 
 ## Current Feature Status
 
@@ -22,62 +30,63 @@ The current beta has working support for the **CS1237 probe** and **cutter senso
 | Klipper v13 | ✅ Running | Printer control software |
 | CS1237 probe | ✅ Working | Probe functionality operational |
 | Cutter sensor | ✅ Working | Sensor functionality operational |
-| Host MCU flashing | ✅ Available | Flashing script included in the download folder |
-| Main MCU flashing | ✅ Available | Flashing script included in the download folder |
-| THR MCU flashing | ✅ Available | Flashing script included in the download folder |
-| AI camera | ⏸️ Inactive | Not enabled in the current beta |
-| Macros and settings | 🔧 Needs refinement | Further review and adjustment required |
+| Updated macros and settings | ✅ Updated | Included in the latest firmware image |
+| Print testing | ✅ Successful so far | Several prints completed without observed issues |
+| Host / Main / THR MCU flashing | ✅ Included | Flashing scripts and files in the download folder |
+| RKDevTool | ✅ Included | Available in the download folder |
+| Windows 10 drivers | ✅ Included | Available in the download folder |
+| AI camera | ⏸️ Disabled | Not enabled in the current beta |
 
 ## Download
 
-### 📥 Firmware and Flashing Tools
+### 📥 Updated Firmware Image and Flashing Tools
 
-**[Download Tortillery-M1Pro firmware and tools from Google Drive](https://drive.google.com/drive/folders/1FenMh4RXV9PXNuyFfsBMxAcPvBawfPU2?usp=sharing)**
+**[Download Tortillery-M1Pro from Google Drive](https://drive.google.com/drive/folders/1FenMh4RXV9PXNuyFfsBMxAcPvBawfPU2?usp=sharing)**
 
-The download folder contains:
+The Google Drive folder includes:
 
-- Tortillery-M1Pro custom firmware
-- MCU flashing scripts for **Host**, **Main**, and **THR**
-- **RKDevTool**
-- **Windows drivers**
+- **Updated Tortillery-M1Pro firmware image**, with revised macros and configuration settings.
+- **RKDevTool** flashing utility.
+- **MCU flashing scripts and required files** for **THR**, **Main**, and **Host**.
+- **Windows 10 drivers**.
 
 > [!WARNING]
-> This is **beta firmware**. Flashing firmware carries a risk of data loss, device malfunction, or requiring recovery. Back up your current firmware and printer configuration where possible, verify hardware compatibility, and review the flashing files before proceeding. Use at your own risk.
+> This is still **beta firmware**. Back up your existing firmware and printer configuration before flashing. Verify hardware compatibility and carefully follow the instructions provided with the flashing files. Flashing carries a risk of device malfunction or requiring recovery. Use at your own risk.
 
 ## Screenshots
 
-Screenshots from the current Tortillery-M1Pro beta environment.
+Screenshots from the Tortillery-M1Pro environment, showing system information and the update manager.
 
 ### System Loads and Update Manager
 
-System status showing Host, Main and THR MCUs, Klipper, Debian GNU/Linux 13 (Trixie), and the update manager.
+System information showing the MCUs, Klipper, Debian GNU/Linux 13 (Trixie), and the update manager.
 
-![Tortillery-M1Pro System Loads and Update Manager](assets/screenshots/system-loads.png)
+![Tortillery-M1Pro system loads and update manager](assets/screenshots/system-loads.png)
 
 ### Terminal System Information
 
-Tortillery-M1Pro terminal banner, Linux kernel version, architecture, and Debian 13 (Trixie) environment.
+Tortillery-M1Pro terminal banner, Linux kernel version, architecture, and Debian GNU/Linux 13 (Trixie).
 
-![Tortillery-M1Pro terminal information](assets/screenshots/terminal-system-info.jpg)
+![Tortillery-M1Pro terminal system information](assets/screenshots/terminal-system-info.jpg)
 
-## Development Status
+## Project Status
 
-**Overall status: Functional beta — further testing and tuning required.**
+**Current status: Stable beta — successful print testing, with ongoing development.**
 
 - [x] Debian GNU/Linux 13 (Trixie) running
 - [x] Klipper v13 running
-- [x] CS1237 probe working
-- [x] Cutter sensor working
-- [x] MCU flashing scripts available for Host, Main, and THR
-- [ ] Review and validate macros
-- [ ] Refine printer configuration and settings
-- [ ] Complete further beta testing
+- [x] CS1237 probe and cutter sensor working
+- [x] Updated macros and configuration included
+- [x] Several test prints completed without observed issues
+- [x] MCU flashing scripts and files available for Host, Main, and THR
+- [x] RKDevTool and Windows 10 drivers available
+- [ ] Enable and validate AI camera support
+- [ ] Continue testing and refining the firmware
 
 ### Known Limitations
 
-- Macros still require review and testing.
-- Configuration settings still need adjustments and fine-tuning.
-- The AI camera is **not active** in the current version.
+- **AI camera support is currently disabled.**
+- The firmware remains in beta; successful tests do not guarantee compatibility with every configuration or printing scenario.
 
 ## Compatibility
 
@@ -89,7 +98,7 @@ Questions, bug reports, testing feedback, and contributions are welcome.
 
 💬 **[Contact the project on Telegram](https://t.me/+9mpIxyQTtlQ2NmQ8)**
 
-You can also open a GitHub issue in this repository to report a problem or suggest an improvement once the repository is published.
+You can also use the repository's GitHub Issues section to report bugs or suggest improvements.
 
 ## License and Credits
 
@@ -111,4 +120,4 @@ Tortillery is not officially affiliated with or endorsed by Artillery, Klipper, 
 
 ---
 
-*Made for the Artillery M1 Pro community. Tortillery-M1Pro is an independent custom firmware project currently in beta development.*
+*Made for the Artillery M1 Pro community. Tortillery-M1Pro remains an independent community firmware project in beta development.*

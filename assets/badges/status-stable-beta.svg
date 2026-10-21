@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="22" role="img" aria-label="Status: STABLE BETA" viewBox="0 0 164 22">
+<title>Status: STABLE BETA</title><clipPath id="r"><rect width="164" height="22" rx="4"/></clipPath>
+<g clip-path="url(#r)"><rect width="66" height="22" fill="#555"/><rect x="66" width="98" height="22" fill="#238636"/></g>
+<g fill="#fff" font-family="DejaVu Sans,Arial,sans-serif" font-size="11" text-anchor="middle"><text x="33" y="15">Status</text><text x="115" y="15">STABLE BETA</text></g>
+</svg>
